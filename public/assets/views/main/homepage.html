@@ -1,12 +1,41 @@
-<html>
-    <head>
-        <!-- remember to route relative to index.php  -->
-        <script type="text/javascript" src="./assets/js/homepage.js"></script>
-        <link rel="stylesheet" href="./assets/styles/homepage.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script type="text/javascript" src="./assets/js/homepage.js"></script>
+    <link rel="stylesheet" href="./assets/styles/homepageinfo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="#about">About</a> 
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+    </nav>
 
-    <body>
-        <p>homepage!</p>
-    </body>
+    <div class="hero">
+        <h1>Abigail Padilla</h1>
+        <p>Computer Science Student @ Fordham University | Data Engineer Intern @ Jaguar Land Rover</p>
+    </div>
+
+    <div id="about" class="about-hero"> 
+        <h1>About Me</h1>
+        <p class="about-description">
+            Hello World! 
+            <br>
+            I'm Abby, a current junior at Fordham, majoring in Computer Science and minoring in Economics.
+            Through my internship at JLR, I utilize SQL and Python to create, automate, and optimize data pipelines to 
+            ensure accurate and efficient results for a multitude of departments throughout the company. During my 
+            time at Fordham, I continuously gain exposure to other programming languages, including C++, SwiftUI, 
+            HTML, CSS, and JavaScript.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 Abigail Padilla. All rights reserved.
+    </footer>
+</body>
 </html>
-
