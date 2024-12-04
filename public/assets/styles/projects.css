@@ -1,0 +1,95 @@
+body {
+    background-color: #272727; 
+    color: #fdfde7; 
+    font-family: serif; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(255, 253, 245);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #e6d5d7; 
+    font-weight: bold;
+}
+
+h1 {
+    color: #ffe2e7; 
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2.8em;
+}
+
+div {
+    background-color: #2f2f2f; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: serif;
+    color: #ffe2e7; 
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {   
+    color: #fdfde7; 
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+p.no-projects {
+    text-align: center;
+    font-family: serif;
+    font-size: 1.5em;
+    color: #ffe2e7; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    div {
+        width: 95%;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
