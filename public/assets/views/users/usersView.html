@@ -1,1 +1,25 @@
-<div>imagine i am a users view</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+</head>
+<body>
+
+    <h1>Users List</h1>
+
+    <?php if (isset($users) && count($users) > 0): ?>
+        <ul>
+            <?php foreach ($users as $user): ?>
+                <li>
+                    <strong><?= $user->name ?></strong> - <?= $user->email ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else: ?>
+        <p>No users found.</p>
+    <?php endif; ?>
+
+</body>
+</html>
