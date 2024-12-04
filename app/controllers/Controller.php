@@ -4,7 +4,11 @@ namespace app\controllers;
 
 abstract class Controller {
 
-    public function returnView($pathToView) {
+    public function returnView($pathToView, $data = []) {
+        if (!empty($data)) 
+        {
+            extract($data);  
+        }
         require $pathToView;
         exit();
     }
@@ -15,5 +19,8 @@ abstract class Controller {
         exit();
     }
 
+    public function notFound() {
+        $this->returnView('./assets/views/errors/404.html');
+    }
 
 }
