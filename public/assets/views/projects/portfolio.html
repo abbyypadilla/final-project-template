@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects List</title>
+    <link rel="stylesheet" href="/assets/styles/projects.css">
+</head>
+<body>
+     <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <h1>Portfolio</h1>
+
+    <?php if (isset($projects) && count($projects) > 0): ?>
+        <?php foreach ($projects as $project): ?>
+            <div>
+                <h2><?= $project->title ?></h2>
+                <p><?= $project->description ?></p>
+                <img src="<?= $project->image_url ?>" alt="Project image">
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>No projects found.</p>
+    <?php endif; ?>
+</body>
+</html>
